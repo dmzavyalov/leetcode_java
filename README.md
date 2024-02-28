@@ -1,4 +1,5 @@
 
 | No | LeetCode Link                                                                                                                     | Topics                       | Solution                                                         |
 |----|-----------------------------------------------------------------------------------------------------------------------------------|------------------------------|------------------------------------------------------------------|
+| 27 | [Remove Element](https://leetcode.com/problems/remove-element/?envType=study-plan-v2&envId=top-interview-150)                     | Array, Two Pointers          | [Solution](src/main/java/Q0027RemoveElement/Solution.java)       |
 | 88 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/description/?envType=study-plan-v2&envId=top-interview-150) | Array, Two Pointers, Sorting | [Solution](src/main/java/Q0088MergeSortedArray/SolutionTwo.java) |
