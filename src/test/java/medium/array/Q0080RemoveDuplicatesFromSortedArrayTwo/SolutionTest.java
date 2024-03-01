@@ -1,5 +1,6 @@
-package medium.Q0080RemoveDuplicatesFromSortedArrayTwo;
+package medium.array.Q0080RemoveDuplicatesFromSortedArrayTwo;
 
+import medium.array.Q0080RemoveDuplicatesFromSortedArrayTwo.Solution;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;

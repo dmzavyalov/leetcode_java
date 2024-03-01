@@ -1,4 +1,4 @@
-package easy.Q0027RemoveElement;
+package easy.array.Q0027RemoveElement;
 
 /*
 

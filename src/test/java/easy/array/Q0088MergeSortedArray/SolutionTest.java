@@ -1,11 +1,9 @@
-package easy.Q0088MergeSortedArray;
+package easy.array.Q0088MergeSortedArray;
 
-import easy.Q0088MergeSortedArray.SolutionTwo;
+import easy.array.Q0088MergeSortedArray.Solution;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
-
-class SolutionTwoTest {
+import static org.junit.jupiter.api.Assertions.*;
+class SolutionTest {
 
     @Test
     void testOne() {
@@ -14,7 +12,7 @@ class SolutionTwoTest {
         final var nums2 = new int[] { 2, 5, 6 };
         final int n = 3;
 
-        final var solution = new SolutionTwo();
+        final var solution = new Solution();
         solution.merge(nums1, m, nums2, n);
         final var expected = new int[] { 1, 2, 2, 3, 5, 6};
         assertArrayEquals(nums1, expected);
@@ -27,7 +25,7 @@ class SolutionTwoTest {
         final var nums2 = new int[] { };
         final int n = 0;
 
-        final var solution = new SolutionTwo();
+        final var solution = new Solution();
         solution.merge(nums1, m, nums2, n);
         final var expected = new int[] { 1 };
         assertArrayEquals(nums1, expected);
@@ -40,7 +38,7 @@ class SolutionTwoTest {
         final var nums2 = new int[] { 1 };
         final int n = 1;
 
-        final var solution = new SolutionTwo();
+        final var solution = new Solution();
         solution.merge(nums1, m, nums2, n);
         final var expected = new int[] { 1 };
         assertArrayEquals(nums1, expected);

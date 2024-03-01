@@ -1,4 +1,4 @@
-package easy.Q0026RemoveDuplicatesFromSortedArray;
+package easy.array.Q0026RemoveDuplicatesFromSortedArray;
 
 /*
 

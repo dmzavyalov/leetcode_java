@@ -1,4 +1,4 @@
-package medium.Q0080RemoveDuplicatesFromSortedArrayTwo;
+package medium.array.Q0080RemoveDuplicatesFromSortedArrayTwo;
 
 /*
 

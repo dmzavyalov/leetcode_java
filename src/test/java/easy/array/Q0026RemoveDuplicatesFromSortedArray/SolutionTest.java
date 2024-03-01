@@ -1,5 +1,6 @@
-package easy.Q0026RemoveDuplicatesFromSortedArray;
+package easy.array.Q0026RemoveDuplicatesFromSortedArray;
 
+import easy.array.Q0026RemoveDuplicatesFromSortedArray.Solution;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;

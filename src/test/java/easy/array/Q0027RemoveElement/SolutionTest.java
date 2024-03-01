@@ -1,6 +1,6 @@
-package easy.Q0027RemoveElement;
+package easy.array.Q0027RemoveElement;
 
-import easy.Q0027RemoveElement.Solution;
+import easy.array.Q0027RemoveElement.Solution;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
