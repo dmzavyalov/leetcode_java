@@ -1,4 +1,4 @@
-package Q0088MergeSortedArray;
+package easy.Q0088MergeSortedArray;
 
 /*
 

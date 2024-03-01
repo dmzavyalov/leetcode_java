@@ -1,5 +1,6 @@
-package Q0088MergeSortedArray;
+package easy.Q0088MergeSortedArray;
 
+import easy.Q0088MergeSortedArray.SolutionTwo;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
