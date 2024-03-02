@@ -20,7 +20,6 @@ public class Solution {
     public int majorityElement(int[] nums) {
         int count = 0, candidate = -1;
 
-        //First pass, look for candidate
         for (int i = 0; i < nums.length; i++) {
             if (count == 0) {   //Another candidate takes over
                 candidate = nums[i];
@@ -34,14 +33,6 @@ public class Solution {
             }
         }
 
-        //Second pass, verification
-        count = 0;
-        for (int i = 0; i < nums.length; i++) {
-            if (nums[i] == candidate) {
-                count++;
-            }
-        }
-
-        return count > (nums.length / 2) ? candidate : -1;
+        return candidate;
     }
 }
