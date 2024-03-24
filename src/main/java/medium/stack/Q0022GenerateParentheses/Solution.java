@@ -3,9 +3,6 @@ package medium.stack.Q0022GenerateParentheses;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Objects;
-import java.util.function.BiConsumer;
-import java.util.stream.Collectors;
 
 /*
 
