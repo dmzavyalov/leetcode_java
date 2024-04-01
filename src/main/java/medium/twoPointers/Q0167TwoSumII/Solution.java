@@ -1,4 +1,4 @@
-package medium.twoPointers.TwoSumII;
+package medium.twoPointers.Q0167TwoSumII;
 
 /*
 
