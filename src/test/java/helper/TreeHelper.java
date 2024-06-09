@@ -8,12 +8,12 @@ import java.util.Queue;
 import java.util.LinkedList;
 
 public class TreeHelper {
-    public static TreeNode arrayToTreeLevelOrder(int[] values) {
+    public static TreeNode arrayToTreeLevelOrder(Integer[] values) {
         TreeNode root = null;
         Queue<TreeNode> queue = new LinkedList<>();
 
-        for (int v: values) {
-            var node = new TreeNode(v);
+        for (int i = 0; i < values.length; i++) {
+            var node = null != values[i] ? new TreeNode(values[i]) : null;
             if (root == null) {
                 root = node;
             } else if (queue.peek().left == null) {
@@ -28,9 +28,9 @@ public class TreeHelper {
         return root;
     }
 
-    public static int[] treeToArrayLevelOrder(TreeNode root) {
+    public static Integer[] treeToArrayLevelOrder(TreeNode root) {
         if (root == null) {
-            return new int[]{};
+            return new Integer[]{};
         }
 
         List<Integer> result = new ArrayList<>();
@@ -46,7 +46,7 @@ public class TreeHelper {
                 queue.add(node.right);
             }
         }
-        return result.stream().mapToInt(Integer::intValue).toArray();
+        return result.toArray(Integer[]::new);
     }
 
 }
