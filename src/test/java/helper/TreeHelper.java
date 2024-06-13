@@ -9,20 +9,31 @@ import java.util.LinkedList;
 
 public class TreeHelper {
     public static TreeNode arrayToTreeLevelOrder(Integer[] values) {
-        TreeNode root = null;
-        Queue<TreeNode> queue = new LinkedList<>();
+        if (values == null || values.length == 0) {
+            return null;
+        }
 
-        for (int i = 0; i < values.length; i++) {
-            var node = null != values[i] ? new TreeNode(values[i]) : null;
-            if (root == null) {
-                root = node;
-            } else if (queue.peek().left == null) {
-                queue.peek().left = node;
-            } else {
-                queue.peek().right = node;
-                queue.remove();
+        TreeNode root = new TreeNode(values[0]);
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.add(root);
+        int i = 1;
+
+        while (i < values.length) {
+            TreeNode node = queue.poll();
+
+            node.left = values[i] != null ?  new TreeNode(values[i]) : null;
+            i++;
+            if (node.left != null) {
+                queue.add(node.left);
             }
-            queue.add(node);
+
+            if (i < values.length) {
+                node.right = values[i] != null ?  new TreeNode(values[i]) : null;
+                i++;
+                if (node.right != null) {
+                    queue.add(node.right);
+                }
+            }
         }
 
         return root;
@@ -48,5 +59,4 @@ public class TreeHelper {
         }
         return result.toArray(Integer[]::new);
     }
-
 }

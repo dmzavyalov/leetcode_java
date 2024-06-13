@@ -8,7 +8,7 @@ https://leetcode.com/problems/diameter-of-binary-tree/
 Topics: Tree, Depth-First Search, Binary Tree
 
 Time: O(n)
-Space: O(1)
+Space: O(max height), to hold recursive stack call
  */
 
 public class Solution {
