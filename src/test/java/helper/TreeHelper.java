@@ -2,10 +2,7 @@ package helper;
 
 import dataStructures.TreeNode;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Queue;
-import java.util.LinkedList;
+import java.util.*;
 
 public class TreeHelper {
     public static TreeNode arrayToTreeLevelOrder(Integer[] values) {
@@ -45,18 +42,27 @@ public class TreeHelper {
         }
 
         List<Integer> result = new ArrayList<>();
-        Queue<TreeNode> queue = new LinkedList<>();
+        List<TreeNode> queue = new LinkedList<>();
         queue.add(root);
+
         while (!queue.isEmpty()) {
-            var node = queue.poll();
-            result.add(node.val);
-            if (node.left != null) {
-                queue.add(node.left);
+            var levelLen = queue.size();
+            var level = new ArrayList<Integer>();
+            for (int i = 0; i < levelLen; i++) {
+                var node = queue.removeFirst();
+                if (node != null) {
+                    level.add(node.val);
+                    queue.add(node.left);
+                    queue.add(node.right);
+                } else {
+                    level.add(null);
+                }
             }
-            if (node.right != null) {
-                queue.add(node.right);
+            if (level.stream().anyMatch(Objects::nonNull)) {
+                result.addAll(level);
             }
         }
+
         return result.toArray(Integer[]::new);
     }
 }
