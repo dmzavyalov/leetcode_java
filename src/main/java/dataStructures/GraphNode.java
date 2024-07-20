@@ -9,4 +9,9 @@ public class GraphNode {
     public GraphNode(int val) {
         this.val = val;
     }
+
+    public GraphNode(int val, List<GraphNode> neighbors) {
+        this.val = val;
+        this.neighbors = neighbors;
+    }
 }
