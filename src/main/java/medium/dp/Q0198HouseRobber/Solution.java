@@ -6,6 +6,8 @@ https://leetcode.com/problems/house-robber/
 
 Array, Dynamic Programming
 
+Time: O(n)
+
  */
 
 public class Solution {
