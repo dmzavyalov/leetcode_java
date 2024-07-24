@@ -13,7 +13,7 @@ import java.util.Queue;
 
 public class Solution {
     public void wallsAndGates(int[][] rooms) {
-        //Parallel BFS
+        //Multi-source BFS
         int n = rooms.length;
         int m = rooms[0].length;
 
@@ -40,7 +40,7 @@ public class Solution {
                     int x = p[0] + directions[j];
                     int y = p[1] + directions[j + 1];
                     //Do not change score of rooms already explored
-                    if (x >= 0 && x < m && y >= 0 && y < n && rooms[x][y] == Integer.MAX_VALUE) {
+                    if (x >= 0 && x < n && y >= 0 && y < m && rooms[x][y] == Integer.MAX_VALUE) {
                         rooms[x][y] = distance;
                         q.offer(new int[] {x, y});  //Add room to the queue to explore its neighbors in the next layer
                     }
