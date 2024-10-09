@@ -1,4 +1,4 @@
-package medium.math.Q0743NetworkDelayTime;
+package medium.graph.Q0743NetworkDelayTime;
 
 /*
 https://leetcode.com/problems/network-delay-time/

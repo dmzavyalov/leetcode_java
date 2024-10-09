@@ -1,5 +1,6 @@
 package medium.math.Q0743NetworkDelayTime;
 
+import medium.graph.Q0743NetworkDelayTime.Solution;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
